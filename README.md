@@ -1,7 +1,3 @@
-# textgenrnn
-
-![dank text](/docs/textgenrnn_console.gif)
-
 Easily train your own text-generating neural network of any size and complexity on any text dataset with a few lines of code, or quickly train on a text using a pretrained model.
 
 textgenrnn is a Python 3 module on top of [Keras](https://github.com/fchollet/keras)/[TensorFlow](https://www.tensorflow.org) for creating [char-rnn](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)s, with many cool features:
@@ -135,51 +131,3 @@ Additionally, the retraining is done with a momentum-based optimizer and a linea
 * Hierarchical softmax activation for word-level models (once Keras has good support for it).
 
 * FP16 for superfast training on Volta/TPUs (once Keras has good support for it).
-
-## Articles/Projects using textgenrnn
-
-### Articles
-
-* Lifehacker: [How to Train Your Own Neural Network](https://lifehacker.com/we-trained-an-ai-to-generate-lifehacker-headlines-1826616918) by Beth Skwarecki
-* New York Times: [Let Our Algorithm Choose Your Halloween Costume](https://www.nytimes.com/interactive/2018/10/26/opinion/halloween-spooky-costumes-machine-learning-generator.html) by Janelle Shane
-* CNN Business: [This quirky experiment highlights AI's biggest challenges](https://www.cnn.com/2018/11/09/tech/janelle-shane-ai/index.html) by Rachel Metz
-
-### Projects
-
-* [Tweet Generator](https://github.com/minimaxir/tweet-generator) — Train a neural network optimized for generating tweets based off of any number of Twitter users
-* [Hacker News Simulator](https://twitter.com/hackernews_nn) — Twitter bot trained on 300,000+ Hacker News submissions using textgenrnn.
-* [SubredditRNN](https://www.reddit.com/r/subredditnn) — Reddit Subreddit where all submitted content is from textgenrnn bots.
-* [Human-AI Collaborated Pizzas](https://howtogeneratealmostanything.com/food/2018/08/30/episode2.html) — Pizza recepies generated with textgenrnn and made in real life.
-* [Board Game Titles](https://boardgamegeek.com/thread/2105706/i-trained-neural-network-17000-game-titles-bgg)
-* [Video Game Discussion Forum Titles](https://www.resetera.com/threads/i-trained-an-ai-on-tens-of-thousands-of-resetera-post-titles-and-discovered-how-the-world-ends.82679/)
-* [A.I Created Cakes](https://www.cupcaikes.com/index.html)
-* [AI Created Cookies](http://aiweirdness.com/post/180892528177/aw-yeah-its-time-for-cookies-with-neural-networks)
-* [AI Generated Songs](http://aiweirdness.com/post/180654319147/how-to-begin-a-song)
-
-### Tweets
-
-* [BuzzFeed YouTube Videos](https://twitter.com/minimaxir/status/1064604986951163905)
-* [AWS Services](https://twitter.com/jamesoff/status/1073647847130742787)
-* [Recipes + D&D Spells + Heavy Metal Names](https://twitter.com/ThomasClaburn/status/1049069940571955201)
-* [RPG Adventure Names](https://twitter.com/400goblins/status/1036794962740953088)
-* [The Onion + Cosmopolitan](https://twitter.com/BBCPARLlAMENT/status/1014834653113585664)
-* [Google Conference Room Names](https://twitter.com/tensafefrogs/status/1009912151060951045)
-* [Sith Lords](https://twitter.com/JanelleCShane/status/1002573232103305216)
-
-## Maintainer/Creator
-
-Max Woolf ([@minimaxir](http://minimaxir.com))
-
-*Max's open-source projects are supported by his [Patreon](https://www.patreon.com/minimaxir). If you found this project helpful, any monetary contributions to the Patreon are appreciated and will be put to good creative use.*
-
-## Credits
-
-Andrej Karpathy for the original proposal of the char-rnn via the blog post [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/).
-
-[Daniel Grijalva](https://github.com/Juanets) for [contributing](https://github.com/minimaxir/textgenrnn/pull/52) an interactive mode.
-
-## License
-
-MIT
-
-Attention-layer code used from [DeepMoji](https://github.com/bfelbo/DeepMoji) (MIT Licensed)
